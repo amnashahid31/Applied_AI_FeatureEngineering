@@ -14,21 +14,29 @@ The purpose of this project is to develop and evaluate regression models for pre
 **Data Pre-processing:**
 
 • Merge order data with cluster map data to obtain region IDs.
+
 • Convert the "Time" column to datetime format.
+
 • Create time slots based on a defined interval (e.g., 10 minutes).
+
 • Calculate demand (total number of orders) and supply (fulfilled orders) for each region and time slot.
+
 • Handle missing values by filling missing supply values with 0 and calculating the gap between demand and supply.
+
 • Split data into training and testing sets for model training and evaluation.
 
 **Machine Learning Models:**
 
 • Implement Linear Regression, K-Nearest Neighbors Regression (KNN), and Decision Tree Regression models.
+
 • Train each model using the training data.
+
 • Predict the gap for the test data using the trained models.
 
 **Evaluation Metrics:**
 
 • Calculate Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and R-squared (R²) to assess model performance.
+
 • Visualize results for model comparison.
 
 **Predicted Value:**
